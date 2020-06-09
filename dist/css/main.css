@@ -1,3 +1,33 @@
+/* Menu Buttons */
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 1s ease-out;
+  /* Rotate Into X Width Menu Lines */ }
+  .menu-btn .btn-line {
+    width: 25px;
+    height: 2px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 1s ease-out; }
+  .menu-btn.close {
+    transform: rotate(0.5turn); }
+    .menu-btn.close .btn-line {
+      /* Line 1 - Rotate */
+      /* Line 2 - Hide */
+      /* Line 3 - Rotate */ }
+      .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(0.125turn) translate(5px, 5px);
+        background-color: #eece1a; }
+      .menu-btn.close .btn-line:nth-child(2) {
+        opacity: 0; }
+      .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(-0.125turn) translate(5px, -5px);
+        background-color: #eece1a; }
+
 * {
   box-sizing: border-box; }
 
